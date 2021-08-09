@@ -18,7 +18,7 @@ node ('master')
    git branch: 'master', credentialsId: '65fb834f-a83b-4fe7-8e11-686245c47a65', url: 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git'
  }
  
- stage("Build")
+ stage("BuildMaven")
  {
  sh "${mavenHome}/bin/mvn clean package"
  }
